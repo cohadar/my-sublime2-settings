@@ -1,0 +1,8 @@
+# MacOSX stuff
+.DS_Store
+
+# transient stuff
+.SublimeREPLHistory/
+
+# Package Control
+Package Control*

@@ -1,0 +1,10 @@
+<snippet>
+	<description>else branch</description>
+	<content><![CDATA[
+else {
+	${1:/* code */}
+} 	
+]]></content>
+	<tabTrigger>else</tabTrigger>
+	<scope>source.c</scope>
+</snippet>

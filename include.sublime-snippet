@@ -1,0 +1,8 @@
+<snippet>
+	<description>#include standard C header</description>
+	<content><![CDATA[
+#include <${1:stdio}.h>
+]]></content>
+	<tabTrigger>inc</tabTrigger>
+	<scope>source.c</scope>
+</snippet>
