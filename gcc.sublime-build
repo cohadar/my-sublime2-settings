@@ -8,7 +8,7 @@
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "-c", "gcc -std=c99 -Wall -O2 -lm ${file} -o '${file_path}/a.out' && '${file_path}/a.out'"]
+			"cmd": ["bash", "-c", "${file_path}/a.out"]
 		}
 	]
 }
