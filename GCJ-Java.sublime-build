@@ -1,5 +1,5 @@
 {
-	"cmd": ["javac", "-cp", "../../../java-snippets/", "-Xlint:unchecked", "$file"],
+	"cmd": ["javac", "-cp", "../../../java-snippets/", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
 	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
 	"selector": "source.java",
 
@@ -7,7 +7,7 @@
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "-c", "java -ea -cp '${base_path}:../../../java-snippets/' ${file_base_name} 'GCJ'"]
+			"cmd": ["bash", "-c", "java -ea -cp '${base_path}:../../../java-snippets/' ${file_base_name} COHADAR"]
 		}
 	]
 }
