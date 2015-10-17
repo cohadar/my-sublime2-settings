@@ -1,9 +1,9 @@
 <snippet>
-	<description>else branch</description>
+	<description>else if branch</description>
 	<content><![CDATA[
-} else {
+} else if (${1:condition}) {
 	
 ]]></content>
-	<tabTrigger>else</tabTrigger>
+	<tabTrigger>elif</tabTrigger>
 	<scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>
