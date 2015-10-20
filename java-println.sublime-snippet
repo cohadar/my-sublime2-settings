@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[System.out.println(${1:x});]]></content>
+    <tabTrigger>pl</tabTrigger>
+    <scope>source.java</scope>
+    <description>println</description>
+</snippet>
