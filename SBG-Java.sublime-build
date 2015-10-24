@@ -1,0 +1,13 @@
+{
+	"cmd": ["javac", "-cp", "${base_path}:lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"cmd": ["bash", "-c", "java -ea -cp '${base_path}:lib/*' ${file_base_name} COHADAR"]
+		}
+	]
+}
