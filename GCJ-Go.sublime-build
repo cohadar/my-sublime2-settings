@@ -1,0 +1,13 @@
+{
+	"cmd": ["go", "run", "$file", "COHADAR"],
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"cmd": ["go", "run", "$file", "COHADAR"]
+		}
+	]
+}
