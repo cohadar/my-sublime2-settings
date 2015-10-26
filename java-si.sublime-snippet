@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+int ${1:t} = scanner.nextInt();
+
+]]></content>
+    <tabTrigger>si</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan one int</description>
+</snippet>

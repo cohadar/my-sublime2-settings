@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+public class ${TM_FILENAME/(.+)\..+/$1/} {
+
+	static void load(Scanner scanner) {
+		${1:/* scan input file */}
+	}
+
+	public static void main(String[] args) throws Exception {
+		Scanner scanner;
+		if (args.length == 1 && "COHADAR".equals(args[0])) {
+			scanner = new Scanner(new File("${TM_FILENAME/(.+)\..+/$1/}.in"));
+		} else {
+			scanner = new Scanner(System.in);
+		}
+		load(scanner);
+	}
+
+	static void debug(Object...os) {
+		System.err.println(Arrays.deepToString(os));
+	}
+}
+]]></content>
+    <tabTrigger>hr</tabTrigger>
+    <scope>source.java</scope>
+    <description>hackerrank java template</description>
+</snippet>

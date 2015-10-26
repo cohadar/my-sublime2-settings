@@ -1,3 +1,4 @@
 [
-	{ "keys": ["shift+enter"], "command": "build" }
+	{ "keys": ["super+enter"], "command": "build" },
+	{ "keys": ["super+shift+enter"], "command": "build", "args": {"variant": "Run"} }
 ]
