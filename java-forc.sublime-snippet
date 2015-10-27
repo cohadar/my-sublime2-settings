@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+for (int ${1:i} = ${2:p}; ${1:i} <= ${3:q}; ${1:i}++) {
+	$0
+}
+]]></content>
+    <tabTrigger>forc</tabTrigger>
+    <scope>source.java</scope>
+    <description>for over closed range</description>
+</snippet>

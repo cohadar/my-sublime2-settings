@@ -22,7 +22,9 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 	static void debug(Object...os) {
 		System.err.println(Arrays.deepToString(os));
 	}
+
 }
+
 ]]></content>
     <tabTrigger>hr</tabTrigger>
     <scope>source.java</scope>
