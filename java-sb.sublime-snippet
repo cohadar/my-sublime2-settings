@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[StringBuilder sb = new StringBuilder();]]></content>
+    <tabTrigger>sb</tabTrigger>
+    <scope>source.java</scope>
+    <description>StringBuilder</description>
+</snippet>

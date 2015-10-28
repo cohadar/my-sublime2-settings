@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+static long lcm(long a, long b) {
+	return a / gcd(a, b) * b;
+}
+]]></content>
+    <tabTrigger>deflcm</tabTrigger>
+    <scope>source.java</scope>
+    <description>lcm function</description>
+</snippet>

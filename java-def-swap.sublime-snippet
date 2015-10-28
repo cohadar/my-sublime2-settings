@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+static void swap(${1:long}[] a, int i, int j) {
+	${1:long} t = a[i];
+	a[i] = a[j];
+	a[j] = t;
+}
+]]></content>
+    <tabTrigger>defswap</tabTrigger>
+    <scope>source.java</scope>
+    <description>swap function</description>
+</snippet>

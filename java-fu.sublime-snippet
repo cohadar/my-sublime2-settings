@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+static ${1:void} ${2:solve}(${3:params}) {
+	${4:/***/}
+}
+]]></content>
+    <tabTrigger>fu</tabTrigger>
+    <scope>source.java</scope>
+    <description>static function</description>
+</snippet>
