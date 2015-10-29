@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+static ${1:int}[] scanArray(Scanner scanner, int n) {
+	String line = scanner.nextLine();
+	Scanner arrayScanner = new Scanner(line);
+	${1:int}[] a = new ${1:int}[n];
+	for (int i = 0; i < n; i++) {
+		a[i] = arrayScanner.next${2:Int}();
+	}
+	return a;
+}
+]]></content>
+    <tabTrigger>defsa</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan array from a line</description>
+</snippet>

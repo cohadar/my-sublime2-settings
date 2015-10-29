@@ -5,7 +5,7 @@ import java.io.*;
 
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
-	static void load(Scanner scanner) {
+	static void scan(Scanner scanner) {
 		${1:/* scan input file */}
 	}
 
@@ -14,7 +14,7 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 		if (args.length == 1 && "COHADAR".equals(args[0])) {
 			scanner = new Scanner(new File("${TM_FILENAME/(.+)\..+/$1/}.in"));
 		}
-		load(scanner);
+		scan(scanner);
 	}
 
 	static void debug(Object...os) {
