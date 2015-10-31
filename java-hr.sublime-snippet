@@ -5,16 +5,9 @@ import java.io.*;
 
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
-	static void scan(Scanner scanner) {
-		${1:/* scan input file */}
-	}
-
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		if (args.length == 1 && "COHADAR".equals(args[0])) {
-			scanner = new Scanner(new File("${TM_FILENAME/(.+)\..+/$1/}.in"));
-		}
-		scan(scanner);
+		${1:/* scan input file */}
 	}
 
 	static void debug(Object...os) {
