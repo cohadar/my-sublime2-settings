@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[throw new IllegalArgumentException("${1:Don't be silly!}");]]></content>
+    <tabTrigger>throw</tabTrigger>
+    <scope>source.java</scope>
+    <description>throw</description>
+</snippet>

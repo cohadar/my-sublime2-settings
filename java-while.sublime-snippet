@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+while (${1:t-->0}) {
+	${2:/***/}
+}
+]]></content>
+    <tabTrigger>while</tabTrigger>
+    <scope>source.java</scope>
+    <description>while loop</description>
+</snippet>

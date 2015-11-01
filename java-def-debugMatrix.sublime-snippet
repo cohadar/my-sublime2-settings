@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+static void debugMatrix(char[][] M) {
+	if (!DEBUG) { return; }
+	for (int y = 0; y < M.length; y++) {
+		for (int x = 0; x < M[0].length; x++) {
+			System.err.print(M[y][x]);
+		}
+		System.err.println();
+	}
+	System.err.println();
+}
+]]></content>
+    <tabTrigger>defdebugMatrix</tabTrigger>
+    <scope>source.java</scope>
+    <description>print matrix to stderr</description>
+</snippet>

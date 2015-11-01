@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+static String join(Collection<?> A, char delimiter) {
+	StringBuilder sb = new StringBuilder();
+	for (Object o : A) {
+		sb.append(o.toString());
+		sb.append(delimiter);
+	}
+	return sb.toString();
+}
+]]></content>
+    <tabTrigger>defjoinCollection</tabTrigger>
+    <scope>source.java</scope>
+    <description>join Collection function</description>
+</snippet>

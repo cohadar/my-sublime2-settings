@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+static class Point {
+	final ${1:int} x;
+	final ${1:int} y;
+	Point(${1:int} x, ${1:int} y) {
+		this.x = x;
+		this.y = y;
+	}
+	public String toString() {
+		return String.format("(x=%d, y=%d)", x, y);
+	}	
+}
+]]></content>
+    <tabTrigger>classPoint</tabTrigger>
+    <scope>source.java</scope>
+    <description>scanIntArray function</description>
+</snippet>
