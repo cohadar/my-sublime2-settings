@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[${1:int}[] ${2:a} = scanArray(scanner, ${3:n});]]></content>
-    <tabTrigger>sa</tabTrigger>
-    <scope>source.java</scope>
-    <description>scan array from a line</description>
-</snippet>

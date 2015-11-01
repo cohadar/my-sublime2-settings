@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${1:int}[] ${2:A} = scanArray(scanner, ${3:n});
+
+]]></content>
+    <tabTrigger>scar</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan array call</description>
+</snippet>

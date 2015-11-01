@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+double ${1:d} = scanner.nextDouble();
+
+]]></content>
+    <tabTrigger>sd</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan next double</description>
+</snippet>

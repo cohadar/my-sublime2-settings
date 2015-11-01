@@ -1,14 +1,16 @@
 <snippet>
     <content><![CDATA[
 static ${1:int}[] scanArray(Scanner scanner, int n) {
+	String line = scanner.nextLine();
+	Scanner arrayScanner = new Scanner(line);
 	${1:int}[] A = new ${1:int}[n];
 	for (int i = 0; i < n; i++) {
-		A[i] = scanner.next${2:Int}();
+		A[i] = arrayScanner.next${2:Int}();
 	}
 	return A;
 }
 ]]></content>
-    <tabTrigger>defscar</tabTrigger>
+    <tabTrigger>defliscar</tabTrigger>
     <scope>source.java</scope>
-    <description>scan array</description>
+    <description>line scan array</description>
 </snippet>
