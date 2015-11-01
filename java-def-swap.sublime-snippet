@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
-static void swap(${1:long}[] a, int i, int j) {
-	${1:long} t = a[i];
-	a[i] = a[j];
-	a[j] = t;
+static void swap(${1:int}[] A, int i, int j) {
+	${1:int} t = A[i];
+	A[i] = A[j];
+	A[j] = t;
 }
 ]]></content>
     <tabTrigger>defswap</tabTrigger>

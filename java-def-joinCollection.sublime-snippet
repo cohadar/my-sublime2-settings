@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static String join(Collection<?> A, char delimiter) {
+static String join(${1:Collection<?>} A, char delimiter) {
 	StringBuilder sb = new StringBuilder();
 	for (Object o : A) {
 		sb.append(o.toString());

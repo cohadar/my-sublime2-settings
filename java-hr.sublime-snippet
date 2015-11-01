@@ -10,13 +10,6 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 		${1:/* scan input file */}
 	}
 
-	static boolean DEBUG = false;
-
-	static void debug(Object...os) {
-		if (!DEBUG) { return; }
-		System.err.printf("%.65536s\n", Arrays.deepToString(os));
-	}
-
 }
 
 ]]></content>

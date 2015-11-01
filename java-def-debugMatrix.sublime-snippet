@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static void debugMatrix(char[][] M) {
+static void debug(char[][] M) {
 	if (!DEBUG) { return; }
 	for (int y = 0; y < M.length; y++) {
 		for (int x = 0; x < M[0].length; x++) {

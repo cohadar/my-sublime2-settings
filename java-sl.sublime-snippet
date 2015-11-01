@@ -1,5 +1,8 @@
 <snippet>
-    <content><![CDATA[String ${1:s} = scanner.nextLine();]]></content>
+    <content><![CDATA[
+String ${1:s} = scanner.nextLine();
+
+]]></content>
     <tabTrigger>sl</tabTrigger>
     <scope>source.java</scope>
     <description>scan next line</description>

@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+static class ${1:Point} {
+	final ${2:int} ${3:x};
+	final ${4:int} ${5:y};
+	Point(${2:int} ${3:x}, ${4:int} ${5:y}) {
+		this.${3:x} = ${3:x};
+		this.${5:y} = ${5:y};
+	}
+	public String toString() {
+		return String.format("(${3:x}=%d, ${5:y}=%d)", ${3:x}, ${5:y});
+	}	
+}
+]]></content>
+    <tabTrigger>classPair</tabTrigger>
+    <scope>source.java</scope>
+    <description>Pair class template</description>
+</snippet>
