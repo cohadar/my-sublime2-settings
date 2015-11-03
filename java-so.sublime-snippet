@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+long ${1:l} = scanner.nextLong();
+
+]]></content>
+    <tabTrigger>so</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan one long</description>
+</snippet>
