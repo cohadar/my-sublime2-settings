@@ -1,21 +1,29 @@
 {
-	"cmd": ["javac", "-cp", ".", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
+	"cmd": ["javac", "-cp", ".:lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
 	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
 	"selector": "source.java",
 
 	"variants":
 	[
 		{
+			"name": "Run",
+			"cmd": ["bash", "-c", "java -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.plain.out | head -c 65536"]
+		},	
+		{
+			"name": "RunJunit",
+			"cmd": ["bash", "-c", "java -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name} | tee ${file_base_name}.junit.out | head -c 65536"]
+		},	
+		{
 			"name": "RunExamp",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.examp.in | java -ea -cp '.' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out | head -c 65536"]
+			"cmd": ["bash", "-c", "cat ${file_base_name}.examp.in | java -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out | head -c 65536"]
 		},
 		{
 			"name": "RunSmall",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.small.in | java -ea -cp '.' ${file_base_name} COHADAR | tee ${file_base_name}.small.out | head -c 65536"]
+			"cmd": ["bash", "-c", "cat ${file_base_name}.small.in | java -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out | head -c 65536"]
 		},		
 		{
 			"name": "RunLarge",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.large.in | java -ea -cp '.' ${file_base_name} COHADAR | tee ${file_base_name}.large.out | head -c 65536"]
+			"cmd": ["bash", "-c", "cat ${file_base_name}.large.in | java -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out | head -c 65536"]
 		}				
 	]
 }

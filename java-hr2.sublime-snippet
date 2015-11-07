@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+/* Mighty Cohadar */
+public class ${TM_FILENAME/(.+)\..+/$1/} {
+
+	${TM_FILENAME/(.+)\..+/$1/}() {}
+
+	static ${TM_FILENAME/(.+)\..+/$1/} load(Scanner scanner) {
+		${1:/* load fields here */}
+		return new ${TM_FILENAME/(.+)\..+/$1/}();
+	}	
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int t = Integer.valueOf(scanner.nextLine());
+		while (t-->0) {
+			${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
+			o.solve();
+		}
+	}
+
+}
+
+]]></content>
+    <tabTrigger>hr2</tabTrigger>
+    <scope>source.java</scope>
+    <description>hackerrank java template 2</description>
+</snippet>
