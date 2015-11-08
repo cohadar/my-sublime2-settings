@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+static class ${1:Triple} {
+	final ${2:int} ${3:x};
+	final ${4:int} ${5:y};
+	final ${6:int} ${7:z};
+	${1:Triple}(${2:int} ${3:x}, ${4:int} ${5:y}, ${6:int} ${7:z}) {
+		this.${3:x} = ${3:x};
+		this.${5:y} = ${5:y};
+		this.${7:z} = ${7:z};
+	}
+	public String toString() {
+		return String.format("(${3:x}=%d, ${5:y}=%d, ${7:z}=%d)", ${3:x}, ${5:y}, ${7:z});
+	}	
+}
+]]></content>
+    <tabTrigger>classTriple</tabTrigger>
+    <scope>source.java</scope>
+    <description>Triple class template</description>
+</snippet>
