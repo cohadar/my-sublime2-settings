@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+assert ${2:0} <= ${1:t} && ${1:t} < ${3:n};
+
+]]></content>
+    <tabTrigger>assertrange</tabTrigger>
+    <scope>source.java</scope>
+    <description>assert range</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+static class ${1:Triple} {
+	final ${2:int} ${3:x};
+	final ${4:int} ${5:y};
+	final ${6:int} ${7:z};
+	final ${8:int} ${9:t};
+	${1:Triple}(${2:int} ${3:x}, ${4:int} ${5:y}, ${6:int} ${7:z}, ${8:int} ${9:t}) {
+		this.${3:x} = ${3:x};
+		this.${5:y} = ${5:y};
+		this.${7:z} = ${7:z};
+		this.${9:t} = ${9:t};
+	}
+	public String toString() {
+		return String.format("(${3:x}=%d, ${5:y}=%d, ${7:z}=%d, ${9:t}=%d)", ${3:x}, ${5:y}, ${7:z}, ${9:t});
+	}	
+}
+]]></content>
+    <tabTrigger>classTuple4</tabTrigger>
+    <scope>source.java</scope>
+    <description>Tuple4 class template</description>
+</snippet>

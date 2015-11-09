@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+// count numbers in range [low..high] divisible by a
+static long divisible(long a, long low, long high) {
+	if (low == 0) {
+		return (high / a + 1);
+	} else{
+		return (high / a + 1) - ((low - 1) / a + 1);
+	}
+}
+]]></content>
+    <tabTrigger>defdivisible</tabTrigger>
+    <scope>source.java</scope>
+    <description>divisible in range function</description>
+</snippet>

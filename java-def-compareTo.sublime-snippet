@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public int compareTo(${1:Vertex} that) {
+	return Integer.compare(this.${2:w}, that.${2:w});
+}
+]]></content>
+    <tabTrigger>defcompareTo</tabTrigger>
+    <scope>source.java</scope>
+    <description>compareTo method</description>
+</snippet>

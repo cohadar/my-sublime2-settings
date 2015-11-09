@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+static final int PRIME = 1000000007;
+]]></content>
+    <tabTrigger>defprime</tabTrigger>
+    <scope>source.java</scope>
+    <description>prime constant</description>
+</snippet>
