@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+List<List<${1:Edge}>> ${2:G} = scanGraph(scanner, ${3:n}, ${4:m});
+
+]]></content>
+    <tabTrigger>scgr</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan graph call</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+@Test
+public void test${1:Name}() {
+	assertEquals(${2:2}, ${3:3});
+}
+]]></content>
+    <tabTrigger>deftest</tabTrigger>
+    <scope>source.java</scope>
+    <description>test function</description>
+</snippet>

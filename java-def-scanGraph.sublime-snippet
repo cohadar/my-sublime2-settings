@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+static List<List<${1:Edge}>> scanGraph(Scanner scanner, int n, int m) {
+	List<List<${1:Edge}>> G = new ArrayList<>();
+	for (int i = 0; i < n; i++) {
+		G.add(new ArrayList<${1:Edge}>());
+	}
+	for (int i = 0; i < m; i++) {
+		int a = scanner.nextInt() - 1;
+		int b = scanner.nextInt() - 1;
+		int w = scanner.nextInt();
+		${1:Edge} e = new ${1:Edge}(a, b, w);
+		G.get(a).add(e);
+		G.get(b).add(e);
+	}		
+	return G;
+}
+]]></content>
+    <tabTrigger>defscgr</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan graph</description>
+</snippet>
