@@ -3,7 +3,7 @@
 int ${1:t} = Integer.valueOf(scanner.nextLine());
 
 ]]></content>
-    <tabTrigger>s1i</tabTrigger>
+    <tabTrigger>li</tabTrigger>
     <scope>source.java</scope>
     <description>scan one int from a line</description>
 </snippet>

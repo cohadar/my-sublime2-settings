@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
 static ${1:int}[] scanArray(Scanner scanner, int n) {
-	${1:int}[] A = new ${1:int}[n];
+	$1[] A = new $1[n];
 	for (int i = 0; i < n; i++) {
-		A[i] = scanner.next${2:Int}();
+		A[i] = scanner.next${1/.*/\u$0/}();
 	}
 	return A;
 }

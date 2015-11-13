@@ -5,7 +5,7 @@ int ${1:a} = Integer.valueOf(_${1:a}${2:b}[0]);
 int ${2:b} = Integer.valueOf(_${1:a}${2:b}[1]);
 
 ]]></content>
-    <tabTrigger>s2i</tabTrigger>
+    <tabTrigger>li2</tabTrigger>
     <scope>source.java</scope>
     <description>scan two ints from a line</description>
 </snippet>

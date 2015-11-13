@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
-String ${1:s} = scanner.nextLine();
+long ${1:t} = scanner.nextLong();
 
 ]]></content>
     <tabTrigger>sl</tabTrigger>
     <scope>source.java</scope>
-    <description>scan next line</description>
+    <description>scan one long</description>
 </snippet>

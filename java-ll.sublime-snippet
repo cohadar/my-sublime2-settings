@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+String ${1:s} = scanner.nextLine();
+
+]]></content>
+    <tabTrigger>ll</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan next line</description>
+</snippet>
