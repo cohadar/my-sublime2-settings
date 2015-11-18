@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public ${1:int} get${2:Width}() {
+	return ${2/.*/\l$0/};
+}
+]]></content>
+    <tabTrigger>defget</tabTrigger>
+    <scope>source.java</scope>
+    <description>getter method</description>
+</snippet>
