@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${1:int}[][] ${2:G} = scanGraph(scanner, ${3:n}, ${4:m});
+
+]]></content>
+    <tabTrigger>scgrmat</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan graph call</description>
+</snippet>

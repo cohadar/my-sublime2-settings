@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
-assert ${2:0} <= ${1:t} && ${1:t} < ${3:n};
+assert ${2:low} <= ${1:n} && ${1:n} <= ${3:high} : "out of range, ${1:n}: " + ${1:n};
 
 ]]></content>
-    <tabTrigger>assertrange</tabTrigger>
+    <tabTrigger>assertRange</tabTrigger>
     <scope>source.java</scope>
     <description>assert range</description>
 </snippet>

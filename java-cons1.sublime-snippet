@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+private final ${1:int} ${2:a};
+
+public ${TM_FILENAME/(.+)\..+/$1/}($1 $2) {
+	this.$2 = $2;
+}
+
+]]></content>
+    <tabTrigger>cons1</tabTrigger>
+    <scope>source.java</scope>
+    <description>one param constructor</description>
+</snippet>
