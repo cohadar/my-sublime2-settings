@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static long gcd(long a, long b) {
+static ${1:long} gcd(${1:long} a, ${1:long} b) {
 	return b == 0 ? a : gcd(b, a % b);
 }
 ]]></content>

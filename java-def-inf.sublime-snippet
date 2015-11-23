@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+static final int ${1:INF} = Integer.MAX_VALUE / 2;
+]]></content>
+    <tabTrigger>definf</tabTrigger>
+    <scope>source.java</scope>
+    <description>infinite integer constant</description>
+</snippet>
