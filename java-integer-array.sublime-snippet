@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+int[] ${1:A} = new int[${2:n}];
+
+]]></content>
+    <tabTrigger>ia</tabTrigger>
+    <scope>source.java</scope>
+    <description>new integer array</description>
+</snippet>
