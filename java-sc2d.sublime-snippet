@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${1:Point}[] ${2:A} = scanPointArray(scanner, ${3:n});
+
+]]></content>
+    <tabTrigger>sc2d</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan point array call</description>
+</snippet>

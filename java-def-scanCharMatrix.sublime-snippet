@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+static char[][] scanCharMatrix(Scanner scanner, int ny, int nx) {
+	char[][] C = new char[ny][nx];
+	for (int y = 0; y < ny; y++) {
+		C[y] = scanner.nextLine().trim().toCharArray();
+		assert C[y].length == nx;
+	}
+	return C;
+}
+]]></content>
+    <tabTrigger>defsccm</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan char matrix</description>
+</snippet>
