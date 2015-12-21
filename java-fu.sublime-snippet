@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-static ${1:void} ${2:solve}(${3:params}) {
-	${4:/***/}
+static ${1:boolean} ${2:solve}(${3:params}) {
+	${4:return false;}
 }
 ]]></content>
     <tabTrigger>fu</tabTrigger>

@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-static String join(${1:Collection<?>} A, char delimiter) {
+static String join(${1:Pair}[] A, char delimiter) {
 	StringBuilder sb = new StringBuilder();
-	for (Object o : A) {
+	for ($1 o : A) {
 		sb.append(o);
 		sb.append(delimiter);
 	}
@@ -11,5 +11,5 @@ static String join(${1:Collection<?>} A, char delimiter) {
 ]]></content>
     <tabTrigger>defjoin</tabTrigger>
     <scope>source.java</scope>
-    <description>join Collection function</description>
+    <description>join array function</description>
 </snippet>

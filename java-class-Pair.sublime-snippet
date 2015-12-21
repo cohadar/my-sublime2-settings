@@ -1,11 +1,18 @@
 <snippet>
     <content><![CDATA[
-static class ${1:Pair} {
+static class ${1:Pair} implements Comparable<${1:Pair}> {
 	final ${2:int} ${3:x};
 	final ${4:int} ${5:y};
 	${1:Pair}(${2:int} ${3:x}, ${4:int} ${5:y}) {
 		this.${3:x} = ${3:x};
 		this.${5:y} = ${5:y};
+	}
+	public int compareTo(Pair that) {
+		if (this.${3:x} == that.${3:x}) {
+			return Integer.compare(this.${5:y}, that.${5:y});
+		} else {
+			return Integer.compare(this.${3:x}, that.${3:x});
+		}
 	}
 	public String toString() {
 		return String.format("(${3:x}=%d, ${5:y}=%d)", ${3:x}, ${5:y});
