@@ -5,7 +5,6 @@ import java.io.*;
 
 /**
   * @author Mighty Cohadar 
-  * @link 
   */
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
