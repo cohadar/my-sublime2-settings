@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+static long[][] binomial(int max_n) {
+	long[][] B = new long[max_n + 1][max_n + 1];
+	for (int n = 0; n < B.length; n++) {
+		B[n][0] = 1;
+		B[n][n] = 1;
+	}
+	for (int n = 0; n < B.length; n++) {
+		for (int k = 1; k < n; k++) {
+			B[n][k] = B[n - 1][k] + B[n - 1][k - 1];
+			if (B[n][k] <= 0) {
+				// happens when max_n > 66
+				throw new RuntimeException(String.format("Binomial Overflow B[%d][%d]=%d", n, k, B[n][k]));
+			}
+		}
+	}
+	return B;
+}
+]]></content>
+    <tabTrigger>defbinomial</tabTrigger>
+    <scope>source.java</scope>
+    <description>binomial(n, k) matrix</description>
+</snippet>
