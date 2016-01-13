@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-private final ${1:int} ${2:a};
+final ${1:int} ${2:a};
 
-public ${TM_FILENAME/(.+)\..+/$1/}($1 $2) {
+${TM_FILENAME/(.+)\..+/$1/}($1 $2) {
 	this.$2 = $2;
 }
 

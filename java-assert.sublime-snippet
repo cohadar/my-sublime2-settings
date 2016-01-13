@@ -1,7 +1,6 @@
 <snippet>
     <content><![CDATA[
 assert ${2:low} <= ${1:n} && ${1:n} <= ${3:high} : "out of range, ${1:n}: " + ${1:n};
-
 ]]></content>
     <tabTrigger>assertRange</tabTrigger>
     <scope>source.java</scope>

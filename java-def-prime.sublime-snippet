@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static final int ${1:PRIME} = (int)1e9 + 7;
+static final int ${1:PRIME} = (int)1e${2:9} + 7;
 ]]></content>
     <tabTrigger>defprime</tabTrigger>
     <scope>source.java</scope>
