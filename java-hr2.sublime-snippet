@@ -17,10 +17,10 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int t = Integer.valueOf(scanner.nextLine());
+		int t = scanner.nextInt();
 		while (t-->0) {
 			${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
-			o.solve();
+			System.out.println(o.solve());
 		}
 	}
 
