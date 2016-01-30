@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+final ${1:int} ${2:a};
+final ${3:int} ${4:b};
+final ${5:int} ${6:c};
+final ${7:int} ${8:d};
+
+${TM_FILENAME/(.+)\..+/$1/}($1 $2, $3 $4, $5 $6, $7 $8) {
+	this.$2 = $2;
+	this.$4 = $4;
+	this.$6 = $6;
+	this.$8 = $8;
+}
+
+]]></content>
+    <tabTrigger>cons4</tabTrigger>
+    <scope>source.java</scope>
+    <description>four param constructor</description>
+</snippet>
