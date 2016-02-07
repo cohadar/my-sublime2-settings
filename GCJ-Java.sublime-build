@@ -15,15 +15,15 @@
 		},	
 		{
 			"name": "RunExamp",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out | head -c 65536"]
 		},
 		{
 			"name": "RunSmall",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out | head -c 65536"]
 		},		
 		{
 			"name": "RunLarge",
-			"cmd": ["bash", "-c", "cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out | head -c 65536"]
 		}				
 	]
 }
