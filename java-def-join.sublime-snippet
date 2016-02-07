@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static String join(${1:Pair}[] A, char delimiter) {
+static String join(${1:int}[] A, String delimiter) {
 	StringBuilder sb = new StringBuilder();
 	for ($1 o : A) {
 		sb.append(o);
