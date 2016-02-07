@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[${1:long} ${2:solve}(${3:params}) {
+    <content><![CDATA[public ${1:long} ${2:solve}(${3:params}) {
 	$0
 }
 ]]></content>

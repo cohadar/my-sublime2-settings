@@ -2,7 +2,7 @@
     <content><![CDATA[
 final ${1:int} ${2:a};
 
-${TM_FILENAME/(.+)\..+/$1/}($1 $2) {
+public ${TM_FILENAME/(.+)\..+/$1/}($1 $2) {
 	this.$2 = $2;
 }
 

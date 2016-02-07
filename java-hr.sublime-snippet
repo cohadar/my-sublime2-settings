@@ -1,17 +1,29 @@
 <snippet>
-    <content><![CDATA[
+<content><![CDATA[
 import java.util.*;
 import java.io.*;
 
 /**
   * @author Mighty Cohadar 
-  * @link 
   */
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
+	public ${TM_FILENAME/(.+)\..+/$1/}() {
+	}
+
+	public boolean solve() {
+		return false;
+	}
+
+	public static ${TM_FILENAME/(.+)\..+/$1/} load(Scanner scanner) {
+		${1:/* load fields here */}
+		return new ${TM_FILENAME/(.+)\..+/$1/}();
+	} 
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		${1:/* scan input file */}
+		${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
+		o.solve();
 	}
 
 }

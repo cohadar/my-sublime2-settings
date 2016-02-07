@@ -8,9 +8,14 @@ import java.io.*;
   */
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
-	${TM_FILENAME/(.+)\..+/$1/}() {}
+	public ${TM_FILENAME/(.+)\..+/$1/}() {
+	}
 
-	static ${TM_FILENAME/(.+)\..+/$1/} load(Scanner scanner) {
+	public boolean solve() {
+		return false;
+	}
+
+	public static ${TM_FILENAME/(.+)\..+/$1/} load(Scanner scanner) {
 		${1:/* load fields here */}
 		return new ${TM_FILENAME/(.+)\..+/$1/}();
 	}	
