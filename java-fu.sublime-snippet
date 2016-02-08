@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static ${1:boolean} ${2:solve}(${3:params}) {
+public static ${1:boolean} ${2:solve}(${3:params}) {
 	${4:return false;}
 }
 ]]></content>
