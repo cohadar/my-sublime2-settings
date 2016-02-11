@@ -2,10 +2,13 @@
     <content><![CDATA[
 static String join(${1:int}[] A, String delimiter) {
 	StringBuilder sb = new StringBuilder();
-	for ($1 o : A) {
-		sb.append(o);
+	for ($1 a : A) {
+		sb.append(a);
 		sb.append(delimiter);
 	}
+	if (sb.length() >= delimiter.length()) {
+		sb.setLength(sb.length() - delimiter.length());
+	}			
 	return sb.toString();
 }
 ]]></content>
