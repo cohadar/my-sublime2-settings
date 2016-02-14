@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+assert ${1:a} == ${2:b} : "${1:a}=" + ${1:a} + ", ${2:b}=" + ${2:b};
+]]></content>
+    <tabTrigger>assertEquals</tabTrigger>
+    <scope>source.java</scope>
+    <description>assert equals</description>
+</snippet>
