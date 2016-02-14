@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+switch (${1:C[i]}) {
+case ${2:'U'}:
+	${6:/***/}
+	break;
+case ${3:'D'}:
+	${7:/***/}
+	break;
+case ${4:'L'}:
+	${8:/***/}
+	break;
+case ${5:'R'}:
+	${9:/***/}
+	break;
+default:
+	throw new RuntimeException("Unknown option: " + $1);
+}
+]]></content>
+    <tabTrigger>switch</tabTrigger>
+    <scope>source.java</scope>
+    <description>switch</description>
+</snippet>
