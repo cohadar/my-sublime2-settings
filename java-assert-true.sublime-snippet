@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+assert ${1:a} : "${1:a}";
+]]></content>
+    <tabTrigger>assertTrue</tabTrigger>
+    <scope>source.java</scope>
+    <description>assert true</description>
+</snippet>

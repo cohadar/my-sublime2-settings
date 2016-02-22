@@ -1,0 +1,26 @@
+{
+	"cmd": ["$file", "COHADAR"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.sh",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"cmd": ["bash", "-c", "$file COHADAR"]
+		},	
+		{
+			"name": "RunExamp",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | $file COHADAR | tee ${file_base_name}.examp.out"]
+		},
+		{
+			"name": "RunSmall",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | $file COHADAR | tee ${file_base_name}.small.out"]
+		},		
+		{
+			"name": "RunLarge",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | $file COHADAR | tee ${file_base_name}.large.out"]
+		}				
+	]	
+
+}

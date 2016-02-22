@@ -11,19 +11,19 @@
 		},	
 		{
 			"name": "RunJunit",
-			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name} | tee ${file_base_name}.junit.out | head -c 65536"]
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name} | tee ${file_base_name}.junit.out"]
 		},	
 		{
 			"name": "RunExamp",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out"]
 		},
 		{
 			"name": "RunSmall",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out"]
 		},		
 		{
 			"name": "RunLarge",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out | head -c 65536"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out"]
 		}				
 	]
 }
