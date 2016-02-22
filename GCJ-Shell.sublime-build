@@ -1,5 +1,5 @@
 {
-	"cmd": ["$file", "COHADAR"],
+	"cmd": ["bash", "-c", "$file COHADAR"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.sh",
 
