@@ -7,11 +7,11 @@
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.plain.out | head -c 65536"]
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR"]
 		},	
 		{
 			"name": "RunJunit",
-			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name} | tee ${file_base_name}.junit.out"]
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
 		},	
 		{
 			"name": "RunExamp",
