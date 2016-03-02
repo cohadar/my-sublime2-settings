@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+scanner.nextLine();
+
+]]></content>
+    <tabTrigger>ls</tabTrigger>
+    <scope>source.java</scope>
+    <description>skip over newline</description>
+</snippet>
