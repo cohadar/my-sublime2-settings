@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+public static ${1:long}[] cumul(int[] A) {
+	${1:long} cumul = 0;
+	${1:long}[] C = new ${1:long}[A.length];
+	for (int i = 0; i < A.length; i++) {
+		cumul += A[i];
+		C[i] = cumul;
+	}
+	return C;
+}
+
+public static ${1:long} sum(${1:long}[] C, int l, int r) {
+	if (l > r) {
+		return 0;
+	}
+	if (l == 0) {
+		return C[r];
+	} else {
+		return C[r] - C[l - 1];
+	}
+}
+]]></content>
+    <tabTrigger>defcumul</tabTrigger>
+    <scope>source.java</scope>
+    <description>cumul array functions</description>
+</snippet>
