@@ -29,6 +29,13 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 		}
 	}
 
+	static boolean DEBUG = true;
+	
+	static void debug(Object...os) {
+		if (!DEBUG) { return; }
+		System.err.printf("%.65536s\n", Arrays.deepToString(os));
+	}	
+
 }
 
 ]]></content>
