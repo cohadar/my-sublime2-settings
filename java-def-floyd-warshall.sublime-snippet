@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+public static void floydWarshall(int[][] D) {
+	int n = D.length;
+	for (int m = 0; m < n; m++) {
+		for (int a = 0; a < n; a++) {
+			for (int b = 0; b < n; b++) {
+				D[a][b] = Math.min(D[a][b], D[a][m] + D[m][b]);
+			}
+		}
+	}
+}
+]]></content>
+    <tabTrigger>defFloydWarshall</tabTrigger>
+    <scope>source.java</scope>
+    <description>floyd warshall</description>
+</snippet>

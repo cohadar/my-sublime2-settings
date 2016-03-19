@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public static ${1:int} max(${1:int}[][] D) {
+	${1:int} max = D[0][0];
+	for (int y = 0; y < D.length; y++) {
+		for (int x = 0; x < D[y].length; x++) {
+			max = Math.max(max, D[y][x]);
+		}
+	}
+	return max;
+}
+]]></content>
+    <tabTrigger>defMaxMatrix</tabTrigger>
+    <scope>source.java</scope>
+    <description>max of matrix</description>
+</snippet>

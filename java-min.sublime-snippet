@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:min} = Math.min(${1:min}, ${2:njak});    	
+]]></content>
+    <tabTrigger>min</tabTrigger>
+    <scope>source.java</scope>
+    <description>min expression</description>
+</snippet>
