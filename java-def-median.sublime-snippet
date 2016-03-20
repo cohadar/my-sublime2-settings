@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+// we assume S is sorted
+public static ${1:int} median(${1:int}[] S) {
+	assert S.length > 0;
+	if (S.length == 1) {
+		return S[0];
+	}
+	int m = S.length / 2;
+	if (S.length % 2 == 0) {
+		return (S[m-1] + S[m]) / 2;
+	} else {
+		return S[m];	
+	}
+}
+]]></content>
+    <tabTrigger>defMedian</tabTrigger>
+    <scope>source.java</scope>
+    <description>find median of a sorted array</description>
+</snippet>

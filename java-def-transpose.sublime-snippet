@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+public static ${1:int}[][] transpose(${1:int}[][] D) {
+	int h = D.length;
+	int w = D[0].length;
+	${1:int}[][] T = new ${1:int}[w][h];
+	for (int x = 0; x < w; x++) {
+		for (int y = 0; y < h; y++) {
+			T[x][y] = D[y][x];
+		}
+	}
+	return T;
+}
+]]></content>
+    <tabTrigger>defTranspose</tabTrigger>
+    <scope>source.java</scope>
+    <description>transpose a matrix</description>
+</snippet>
