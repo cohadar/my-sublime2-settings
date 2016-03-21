@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public static ${1:int} min(${1:int}[] A) {
+	${1:int} min = A[0];
+	for (int i = 1; i < A.length; i++) {
+		if (min > A[i]) {
+			min = A[i];
+		}
+	}
+	return min;
+}
+]]></content>
+    <tabTrigger>defMinArray</tabTrigger>
+    <scope>source.java</scope>
+    <description>min of array</description>
+</snippet>
