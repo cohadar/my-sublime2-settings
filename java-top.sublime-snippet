@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+/**
+  * @author Mighty Cohadar 
+  */
+public class ${TM_FILENAME/(.+)\..+/$1/} {
+
+	$0
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+	}
+
+	static void debug(Object...os) {
+		System.err.printf("%.65536s\\n", Arrays.deepToString(os));
+	}
+	
+}
+
+]]></content>
+    <tabTrigger>top</tabTrigger>
+    <scope>source.java</scope>
+    <description>topcoder java template</description>
+</snippet>
