@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public static int nextInt(int low, int high) {
+	return low + random.nextInt(high - low + 1);
+}
+]]></content>
+    <tabTrigger>defNextInt</tabTrigger>
+    <scope>source.java</scope>
+    <description>random array from interval</description>
+</snippet>

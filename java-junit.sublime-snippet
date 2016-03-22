@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+import java.util.*;
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+/**
+  * @author Mighty Cohadar 
+  */
+public class ${TM_FILENAME/(.+)\..+/$1/} {
+
+	@Test
+	public void test() {
+		$0
+	}
+
+}
+
+]]></content>
+    <tabTrigger>junit</tabTrigger>
+    <scope>source.java</scope>
+    <description>junit test template</description>
+</snippet>
