@@ -4,7 +4,7 @@
  *	@returns true iff y is within relative or absolute 'epsilon' of x. 
  *  By default, 'epsilon' is 1e-6.
  */
-public static boolean isApproximatelyEqual(double x, double y, double epsilon) {
+public static boolean fuzzyEqual(double x, double y, double epsilon) {
 	// Check absolute precision.
 	if (Math.abs(x - y) <= epsilon) {
 		return true;
@@ -17,7 +17,7 @@ public static boolean isApproximatelyEqual(double x, double y, double epsilon) {
 	return (Math.abs((x - y) / x) <= epsilon) || (Math.abs((x - y) / y) <= epsilon);
 }
 ]]></content>
-    <tabTrigger>defIsApproximatelyEqual</tabTrigger>
+    <tabTrigger>geomFuzzyEqual</tabTrigger>
     <scope>source.java</scope>
     <description>fuzzy comparing of double values</description>
 </snippet>

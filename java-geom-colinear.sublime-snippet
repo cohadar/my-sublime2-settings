@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+public static boolean colinear(Point2D a, Point2D b, Point2D c) {
+	b = b.subtract(a);
+	c = c.subtract(a);
+	// maybe fuzzy equal here?
+	return b.getY() * c.getX() == b.getX() * c.getY();
+}
+]]></content>
+    <tabTrigger>geomColinear</tabTrigger>
+    <scope>source.java</scope>
+    <description>are 3 points colinear</description>
+</snippet>
