@@ -14,7 +14,7 @@ case ${5:'R'}:
 	${9:/***/}
 	break;
 default:
-	throw new RuntimeException("Unknown option: " + $1);
+	throw new RuntimeException("Unknown option: " + ($1));
 }
 ]]></content>
     <tabTrigger>switch</tabTrigger>
