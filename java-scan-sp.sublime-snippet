@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+Point2D ${1:p} = new Point2D(scanner.nextDouble(), scanner.nextDouble());
+
+]]></content>
+    <tabTrigger>sp</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan one point2D</description>
+</snippet>

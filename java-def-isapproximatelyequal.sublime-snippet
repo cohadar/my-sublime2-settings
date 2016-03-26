@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+/** 
+ *	@returns true iff y is within relative or absolute 'epsilon' of x. 
+ *  By default, 'epsilon' is 1e-6.
+ */
+public static boolean isApproximatelyEqual(double x, double y, double epsilon) {
+	// Check absolute precision.
+	if (Math.abs(x - y) <= epsilon) {
+		return true;
+	}
+	// Is x or y too close to zero?
+	if ((Math.abs(x) <= epsilon) || (Math.abs(y) <= epsilon)) {
+			return false;
+		}
+	// Check relative precision.
+	return (Math.abs((x - y) / x) <= epsilon) || (Math.abs((x - y) / y) <= epsilon);
+}
+]]></content>
+    <tabTrigger>defIsApproximatelyEqual</tabTrigger>
+    <scope>source.java</scope>
+    <description>fuzzy comparing of double values</description>
+</snippet>
