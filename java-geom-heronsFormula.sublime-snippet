@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+public static double heronsFormula(double a, double b, double c) {
+	double s = (a + b + c) / 2;
+	double area = Math.sqrt(s * (s-a) * (s-b) * (s-c));
+	return (Double.isNaN(area)) ? -1 : area;
+}
+]]></content>
+    <tabTrigger>geomHeronsFormula</tabTrigger>
+    <scope>source.java</scope>
+    <description>triangle area from sidies</description>
+</snippet>

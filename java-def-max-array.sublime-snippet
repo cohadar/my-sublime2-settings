@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-public static ${1:int} max(${1:int}[] A) {
+public static ${1:int} max(${1:int}... A) {
 	${1:int} max = A[0];
 	for (int i = 1; i < A.length; i++) {
 		if (max < A[i]) {
