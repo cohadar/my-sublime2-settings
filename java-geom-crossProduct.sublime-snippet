@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public static double crossProduct(Point2D p1, Point2D p2) {
+	return p1.getX() * p2.getY() - p1.getY() * p2.getX();
+}		
+]]></content>
+    <tabTrigger>geomCrossProduct</tabTrigger>
+    <scope>source.java</scope>
+    <description>crossProduct in 2D</description>
+</snippet>

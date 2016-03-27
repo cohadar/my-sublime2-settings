@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+public static Point2D rotate(Point2D p, double angle) {
+	double c = Math.cos(angle);
+	double s = Math.sin(angle);
+	return new Point2D(p.getX() * c - p.getY() * s, p.getY() * c + p.getX() * s);
+}
+]]></content>
+    <tabTrigger>geomRotate</tabTrigger>
+    <scope>source.java</scope>
+    <description>rotate Point2D</description>
+</snippet>

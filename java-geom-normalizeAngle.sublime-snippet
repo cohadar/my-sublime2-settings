@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public static double normalizeAngle(double angle) {
+	return Math.atan2(Math.sin(angle), Math.cos(angle));
+}
+]]></content>
+    <tabTrigger>geomNormalizeAngle</tabTrigger>
+    <scope>source.java</scope>
+    <description>normalize -PI..PI</description>
+</snippet>
