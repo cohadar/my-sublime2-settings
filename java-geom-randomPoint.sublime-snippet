@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+public static Random random = new Random();
+
+public static Point2D randomPoint() {
+	double low = -1000;
+	double high = 1000;
+	return new Point2D(low + random.nextDouble() * (high - low), low + random.nextDouble() * (high - low));
+}
+]]></content>
+    <tabTrigger>geomRandomPoint</tabTrigger>
+    <scope>source.java</scope>
+    <description>random Point2D</description>
+</snippet>

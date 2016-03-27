@@ -1,5 +1,5 @@
 {
-	"cmd": ["javac", "-target" , "1.8", "-source", "1.8", "-cp", ".:lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
+	"cmd": ["javac", "-target" , "1.8", "-source", "1.8", "-cp", ".:lib/*:../lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
 	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
 	"selector": "source.java",
 
@@ -7,23 +7,23 @@
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR"]
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR"]
 		},	
 		{
 			"name": "RunJunit",
-			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
 		},	
 		{
 			"name": "RunExamp",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out"]
 		},
 		{
 			"name": "RunSmall",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out"]
 		},		
 		{
 			"name": "RunLarge",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out"]
+			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out"]
 		}				
 	]
 }

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+public static Random random = new Random();
+
+public static void shuffle(${1:Point2D}[] A) {
+	for (int i = 0; i < A.length-1; i++) {
+		int j = i + random.nextInt(A.length - i);
+		${1:Point2D} temp = A[i];
+		A[i] = A[j];
+		A[j] = temp;
+	}
+}
+]]></content>
+    <tabTrigger>defShuffle</tabTrigger>
+    <scope>source.java</scope>
+    <description>shuffle array</description>
+</snippet>
