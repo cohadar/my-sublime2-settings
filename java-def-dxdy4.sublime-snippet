@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+static int[] DX = new int[] { +1, 00, -1, 00 };
+static int[] DY = new int[] { 00, +1, 00, -1 };
+]]></content>
+    <tabTrigger>defDXDY4</tabTrigger>
+    <scope>source.java</scope>
+    <description>delta x delta y arrays</description>
+</snippet>
