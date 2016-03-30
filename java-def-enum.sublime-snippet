@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+static enum ${1:Direction} { ${2:E, N, W, S} };
+static ${1:Direction}[] ${1:Direction}s = ${1:Direction}.values();
+]]></content>
+    <tabTrigger>defEnum</tabTrigger>
+    <scope>source.java</scope>
+    <description>enum declaration</description>
+</snippet>

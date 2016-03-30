@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[
-class FastScanner {
+    <content>
+<![CDATA[class FastScanner {
 	private final InputStream is;
 	private final byte[] buff = new byte[1024];
 	private int i;
@@ -107,6 +107,7 @@ class FastScanner {
 		return sb.toString();
 	}
 }
+
 ]]></content>
     <tabTrigger>defFastScanner</tabTrigger>
     <scope>source.java</scope>
