@@ -23,7 +23,7 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
-		for(int it = 1; it <= t; it ++) {
+		for(int it = 1; it <= t; it++) {
 			${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
 			System.out.printf("Case #%d: %d\n", it, o.solve());
 		}
