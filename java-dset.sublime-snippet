@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Set<${1:Integer}> ${2:S} = new ${3:HashSet}<>();
+]]></content>
+    <tabTrigger>dset</tabTrigger>
+    <scope>source.java</scope>
+    <description>define set</description>
+</snippet>

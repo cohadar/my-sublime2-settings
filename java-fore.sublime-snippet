@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+for (Map.Entry<${1:String}, ${2:Long}> e : ${3:map}.entrySet()) {
+	$0
+}
+]]></content>
+    <tabTrigger>fore</tabTrigger>
+    <scope>source.java</scope>
+    <description>for over map entries</description>
+</snippet>

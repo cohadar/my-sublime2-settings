@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:int}[] ${2:A} = new ${1:int}[${3:n}];
+]]></content>
+    <tabTrigger>dar</tabTrigger>
+    <scope>source.java</scope>
+    <description>define array</description>
+</snippet>

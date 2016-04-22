@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+List<${1:Integer}> ${2:L} = new ${3:ArrayList}<>();
+]]></content>
+    <tabTrigger>dlist</tabTrigger>
+    <scope>source.java</scope>
+    <description>define list</description>
+</snippet>

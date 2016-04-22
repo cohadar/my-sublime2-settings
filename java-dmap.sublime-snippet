@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Map<${1:String}, ${2:Integer}> ${3:S} = new ${4:HashMap}<>();
+]]></content>
+    <tabTrigger>dmap</tabTrigger>
+    <scope>source.java</scope>
+    <description>define map</description>
+</snippet>
