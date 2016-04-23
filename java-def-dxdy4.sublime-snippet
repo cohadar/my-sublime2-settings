@@ -1,5 +1,6 @@
 <snippet>
     <content><![CDATA[
+// E, S, W, N
 static int[] DX = new int[] { +1, 00, -1, 00 };
 static int[] DY = new int[] { 00, +1, 00, -1 };
 ]]></content>
