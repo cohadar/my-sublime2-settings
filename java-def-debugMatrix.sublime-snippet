@@ -1,14 +1,15 @@
 <snippet>
     <content><![CDATA[
-static void debug(char[][] M) {
-	if (!DEBUG) { return; }
+static void debug(${1:int}[][] M) {
+	StringBuilder sb = new StringBuilder();
 	for (int y = 0; y < M.length; y++) {
 		for (int x = 0; x < M[0].length; x++) {
-			System.err.print(M[y][x]);
+			sb.append(String.format("${2:%2d }", M[y][x]));
 		}
-		System.err.println();
+		sb.append('\n');
 	}
-	System.err.println();
+	sb.append('\n');
+	System.err.print(sb.toString());
 }
 ]]></content>
     <tabTrigger>defdebugMatrix</tabTrigger>
