@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+public static boolean[] sieve(int n) {
+	boolean[] P = new boolean[n];
+	Arrays.fill(P, true);
+	P[0] = false;
+	P[1] = false;
+	for (int i = 2; i * i <= n; i++) {
+		if (P[i]) {
+			for (int j = i * i; j < n; j += i) {
+				P[j] = false;
+			}
+		}
+	}
+	return P;
+}
+]]></content>
+    <tabTrigger>defSieve</tabTrigger>
+    <scope>source.java</scope>
+    <description>Sieve of Erathostenes</description>
+</snippet>
