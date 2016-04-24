@@ -1,7 +1,6 @@
 <snippet>
     <content><![CDATA[
 char[] ${1:C} = scanner.nextLine().toCharArray();
-
 ]]></content>
     <tabTrigger>lc</tabTrigger>
     <scope>source.java</scope>
