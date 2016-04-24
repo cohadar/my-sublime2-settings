@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+// Do NOT forget ${1:EPS} when doing min/max     	
+static final double ${1:EPS} = 1e-${2:5} / 1000;
+]]></content>
+    <tabTrigger>defepsilon</tabTrigger>
+    <scope>source.java</scope>
+    <description>epsilon constant</description>
+</snippet>
