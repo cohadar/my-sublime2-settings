@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public static ${1:int}[][] scan${1/.*/\u$0/}Matrix(Scanner scanner, int ny, int nx) {
+	$1[][] M = new $1[ny][nx];
+	for (int y = 0; y < ny; y++) {
+		for (int x = 0; x < nx; x++) {
+			M[y][x] = scanner.next${1/.*/\u$0/}();
+		}
+	}
+	return M;
+}
+]]></content>
+    <tabTrigger>defScanMatrix</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan matrix</description>
+</snippet>
