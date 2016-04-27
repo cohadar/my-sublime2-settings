@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+static class ${1:Tuple5} {
+	final ${2:int} ${3:x};
+	final ${4:int} ${5:y};
+	final ${6:int} ${7:z};
+	final ${8:int} ${9:vx};
+	final ${10:int} ${11:vy};
+	${1}(${2} ${3}, ${4} ${5}, ${6} ${7}, ${8} ${9}, ${10} ${11}) {
+		this.${3} = ${3};
+		this.${5} = ${5};
+		this.${7} = ${7};
+		this.${9} = ${9};
+		this.${11} = ${11};
+	}
+	public String toString() {
+		return String.format("(${3}=%d, ${5}=%d, ${7}=%d, ${9}=%d, ${11}=%d)", ${3}, ${5}, ${7}, ${9}, ${11});
+	}	
+}
+]]></content>
+    <tabTrigger>classTuple5</tabTrigger>
+    <scope>source.java</scope>
+    <description>Tuple5 class template</description>
+</snippet>
