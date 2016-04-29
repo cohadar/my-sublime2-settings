@@ -9,7 +9,7 @@ static char[][] scanCharMatrix(Scanner scanner, int ny, int nx) {
 	return C;
 }
 ]]></content>
-    <tabTrigger>defsccm</tabTrigger>
+    <tabTrigger>defScanCharMatrix</tabTrigger>
     <scope>source.java</scope>
     <description>scan char matrix</description>
 </snippet>

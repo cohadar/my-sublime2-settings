@@ -3,7 +3,7 @@
 char[][] ${1:C} = scanCharMatrix(scanner, ${2:ny}, ${3:nx});
 
 ]]></content>
-    <tabTrigger>sccm</tabTrigger>
+    <tabTrigger>scanCharMatrix</tabTrigger>
     <scope>source.java</scope>
     <description>scan char matrix call</description>
 </snippet>

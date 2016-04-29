@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public boolean outside(int x, int y) {
+	return x < 0 || y < 0 || x >= nx || y >= ny;
+}
+]]></content>
+    <tabTrigger>defOutside</tabTrigger>
+    <scope>source.java</scope>
+    <description>are coordinates outside grid</description>
+</snippet>

@@ -21,10 +21,10 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int t = scanner.nextInt();
+		int nt = scanner.nextInt();
 		scanner.nextLine();
-		${1:/* assertRange for t */}
-		for (int it = 1; it <= t; it++) {
+		assert 1 <= nt && nt <= ${1:100} : "out of range, nt: " + nt;
+		for (int it = 1; it <= nt; it++) {
 			${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
 			System.out.printf("Case #%d: %s\n", it, numors(o.solve(), "IMPOSSIBLE"));
 		}
