@@ -3,5 +3,8 @@
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"highlight_line": true,
+	"bold_folder_labels": true,
+	"highlight_modified_tabs": true
 }
