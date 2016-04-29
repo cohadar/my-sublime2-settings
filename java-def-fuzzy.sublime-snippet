@@ -9,8 +9,15 @@ public static boolean fuzzyEqual(double x, double y, double epsilon) {
 	}
 	return (Math.abs((x - y) / x) <= epsilon) || (Math.abs((x - y) / y) <= epsilon);
 }
+
+public static double fuzzyFix(double x, double epsilon) {
+	if (fuzzyEqual(x, Math.round(x), epsilon)) {
+		return Math.round(x);
+	}
+	return x;
+}
 ]]></content>
-    <tabTrigger>defFuzzyEqual</tabTrigger>
+    <tabTrigger>defFuzzy</tabTrigger>
     <scope>source.java</scope>
-    <description>fuzzy comparing of double values</description>
+    <description>fuzzy floating point functions</description>
 </snippet>
