@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+public static Integer[] sortedBits(int nb) {
+	Integer[] B = new Integer[1<<nb];
+	for (int i = 0; i < B.length; i++) {
+		B[i] = i;
+	}
+	Arrays.sort(B, new Comparator<Integer> () {
+		public int compare(Integer a, Integer b) {
+			return Integer.compare(Integer.bitCount(a), Integer.bitCount(b));
+		}
+	});
+	return B;
+}
+]]></content>
+    <tabTrigger>defSortedBits</tabTrigger>
+    <scope>source.java</scope>
+    <description>integers sorted by bit count</description>
+</snippet>

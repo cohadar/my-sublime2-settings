@@ -10,7 +10,7 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 
 	$0
 
-	public int solve() {
+	public int solve(int it) {
 		return -1;
 	}
 
@@ -26,7 +26,7 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 		assert 1 <= nt && nt <= ${1:100} : "out of range, nt: " + nt;
 		for (int it = 1; it <= nt; it++) {
 			${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
-			System.out.printf("Case #%d: %s\n", it, numors(o.solve(), "IMPOSSIBLE"));
+			System.out.printf("Case #%d: %s\n", it, numors(o.solve(it), "IMPOSSIBLE"));
 		}
 	}
 
