@@ -8,11 +8,10 @@ import java.io.*;
   */
 public class ${TM_FILENAME/(.+)\..+/$1/} {
 
-	public ${TM_FILENAME/(.+)\..+/$1/}() {
-	}
+	$0
 
-	public boolean solve() {
-		return false;
+	public int solve() {
+		return -1;
 	}
 
 	public static ${TM_FILENAME/(.+)\..+/$1/} load(Scanner scanner) {
@@ -23,7 +22,7 @@ public class ${TM_FILENAME/(.+)\..+/$1/} {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		${TM_FILENAME/(.+)\..+/$1/} o = ${TM_FILENAME/(.+)\..+/$1/}.load(scanner);
-		o.solve();
+		System.out.println(o.solve());
 	}
 
 }
