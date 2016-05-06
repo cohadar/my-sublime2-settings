@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+public int[] startPermutation(int nn) {
+	int[] P = new int[nn];
+	for (int i = 0; i < nn; i++) {
+		P[i] = i;
+	}
+	return P;
+}
+
+// permutation(startPermutation(nn), 0);
+public void permutation(int[] P, int l) {
+	if (l == P.length - 1) {
+		yield(P);
+		return;
+	}
+	for (int r = l; r < P.length; r++) {
+		swap(P, l, r);
+		permutation(P, l + 1);
+		swap(P, l, r);	
+	}
+}
+]]></content>
+    <tabTrigger>defPermutation</tabTrigger>
+    <scope>source.java</scope>
+    <description>permutation functions</description>
+</snippet>

@@ -11,7 +11,6 @@ public ${TM_FILENAME/(.+)\..+/$1/}($1 $2, $3 $4, $5 $6, $7 $8) {
 	this.$6 = $6;
 	this.$8 = $8;
 }
-
 ]]></content>
     <tabTrigger>cons4</tabTrigger>
     <scope>source.java</scope>

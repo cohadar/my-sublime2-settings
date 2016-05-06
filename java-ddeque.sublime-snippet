@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+ArrayDeque<${1:Integer}> Q = new ArrayDeque<>();
+]]></content>
+    <tabTrigger>ddeque</tabTrigger>
+    <scope>source.java</scope>
+    <description>define deque</description>
+</snippet>

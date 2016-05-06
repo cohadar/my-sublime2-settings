@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+public static int inversionCount(int[] P) {
+	int count = 0;
+	for (int l = 0; l < P.length; l++) {
+		for (int r = l + 1; r < P.length; r++) {
+			if (P[l] > P[r]) {
+				count++;
+			}
+		}
+	}
+	return count;
+}
+]]></content>
+    <tabTrigger>defInversionCount</tabTrigger>
+    <scope>source.java</scope>
+    <description>inversionCount function</description>
+</snippet>

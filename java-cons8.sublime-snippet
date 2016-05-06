@@ -19,7 +19,6 @@ public ${TM_FILENAME/(.+)\..+/$1/}($1 $2, $3 $4, $5 $6, $7 $8, $9 $10, $11 $12, 
 	this.$14 = $14;
 	this.$16 = $16;
 }
-
 ]]></content>
     <tabTrigger>cons8</tabTrigger>
     <scope>source.java</scope>
