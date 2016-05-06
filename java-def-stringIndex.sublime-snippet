@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+public static int stringIndex(Map<String, Integer> M, String s) {
+	Integer i = M.get(s);
+	if (i == null) {
+		i = M.size();
+		M.put(s, i);
+	}
+	return i;
+}
+]]></content>
+    <tabTrigger>defStringIndex</tabTrigger>
+    <scope>source.java</scope>
+    <description>string indexer</description>
+</snippet>

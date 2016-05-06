@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public static void add(Map<${1:String}, Integer> M, ${1:String} word) {
+	Integer count = M.get(word);
+	M.put(word, ((count == null) ? 0 : count) + 1);
+}
+
+public static int get(Map<${1:String}, Integer> M, ${1:String} word) {
+	Integer count = M.get(word);
+	return (count == null) ? 0 : count;
+}
+]]></content>
+    <tabTrigger>defMultiset</tabTrigger>
+    <scope>source.java</scope>
+    <description>multiset functions</description>
+</snippet>
