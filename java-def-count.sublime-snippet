@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public static int count(${1:int}[] A, Predicate<${1/.*/\u$0/}> p) {
+	int count = 0;
+	for (${1:int} a : A) {
+		if (p.test(a)) {
+			count++;
+		}
+	}
+	return count;
+}
+]]></content>
+    <tabTrigger>defArrayCount</tabTrigger>
+    <scope>source.java</scope>
+    <description>count array elements that satisfy predicate</description>
+</snippet>
