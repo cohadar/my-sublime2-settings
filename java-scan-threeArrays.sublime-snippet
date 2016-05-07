@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+${1:int}[] ${3:A} = new ${1:int}[${2:nn}];
+${1:int}[] ${4:B} = new ${1:int}[${2:nn}];
+${1:int}[] ${5:C} = new ${1:int}[${2:nn}];
+for (int i = 0; i < ${2:nn}; i++) {
+	${3:A}[i] = scanner.next${1/.*/\u$0/}();
+	${4:B}[i] = scanner.next${1/.*/\u$0/}();
+	${5:C}[i] = scanner.next${1/.*/\u$0/}();
+	$0
+}
+]]></content>
+    <tabTrigger>scanThreeArrays</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan three arrays</description>
+</snippet>
