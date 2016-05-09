@@ -1,12 +1,32 @@
 <snippet>
     <content><![CDATA[
-public static void add(Map<${1:String}, Integer> M, ${1:String} word) {
-	Integer count = M.get(word);
-	M.put(word, ((count == null) ? 0 : count) + 1);
+public static boolean add(Map<${1:String}, Integer> M, ${1:String} key) {
+	Integer count = M.get(key);
+	if (count == null) {
+		M.put(key, 1);	
+		return true;
+	} else {
+		M.put(key, count + 1);
+		return false;
+	}
 }
 
-public static int get(Map<${1:String}, Integer> M, ${1:String} word) {
-	Integer count = M.get(word);
+public static boolean remove(Map<${1:String}, Integer> M, ${1:String} key) {
+	Integer count = M.get(key);
+	if (count == null) {
+		return false;
+	}
+	count--;
+	if (count == 0) {
+		M.remove(key);
+	} else {
+		M.put(key, count);
+	}
+	return true;
+}
+
+public static int count(Map<${1:String}, Integer> M, ${1:String} key) {
+	Integer count = M.get(key);
 	return (count == null) ? 0 : count;
 }
 ]]></content>
