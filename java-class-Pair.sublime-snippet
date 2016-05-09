@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-static class ${1:Pair} implements Comparable<${1:Pair}> {
+class ${1:Pair} implements Comparable<${1:Pair}> {
 	final ${2:int} ${3:x};
 	final ${4:int} ${5:y};
 	${1:Pair}(${2:int} ${3:x}, ${4:int} ${5:y}) {
