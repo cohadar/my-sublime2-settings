@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-public static String numors(${1:int} num, String def) {
-	return (num == ${2:-1}) ? def : String.valueOf(num);
+public static String numors(${1:int} solution, String def) {
+	return (solution == ${2:-1}) ? def : String.valueOf(solution);
 }
 ]]></content>
     <tabTrigger>defNumors</tabTrigger>
