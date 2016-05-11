@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:TreeSet}<${2:Integer}> ${3:T} = new ${1:TreeSet}<>();
+]]></content>
+    <tabTrigger>dtree</tabTrigger>
+    <scope>source.java</scope>
+    <description>define tree</description>
+</snippet>

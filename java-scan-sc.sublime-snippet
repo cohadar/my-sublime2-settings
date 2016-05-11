@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+char ${1:c} = scanner.next().charAt(0);
+
+]]></content>
+    <tabTrigger>sc</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan next char token</description>
+</snippet>
