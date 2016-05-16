@@ -14,6 +14,14 @@
 			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
 		},	
 		{
+			"name": "RunDecompiler",
+			"cmd": ["bash", "-c", "javap -private -c ${file_base_name}.class | tee tee ${file_base_name}.asmj"]
+		},			
+		{
+			"name": "RunDecompilerVerbose",
+			"cmd": ["bash", "-c", "javap -private -c -l -verbose ${file_base_name}.class | tee tee ${file_base_name}.asmj"]
+		},					
+		{
 			"name": "RunExamp",
 			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out"]
 		},
