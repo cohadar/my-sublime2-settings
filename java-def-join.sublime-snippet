@@ -1,11 +1,13 @@
 <snippet>
     <content><![CDATA[
-static String join(String delimiter, ${1:int}[] A) {
-	StringJoiner sj = new StringJoiner(delimiter);
-	for ($1 a : A) {
-		sj.add(String.valueOf(a));
+static String join(String delimiter, int[] A) {
+	StringBuilder sb = new StringBuilder();
+	for (int a : A) {
+		sb.append(a);
+		sb.append(delimiter);
 	}
-	return sj.toString();
+	sb.setLength(Math.max(0, sb.length() - delimiter.length()));
+	return sb.toString();
 }
 ]]></content>
     <tabTrigger>defjoin</tabTrigger>
