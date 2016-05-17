@@ -1,9 +1,22 @@
 <snippet>
     <content><![CDATA[
-List<List<${1:Edge}>> ${2:G} = scanGraph(scanner, ${3:n}, ${4:m});
-
+int nv = scanner.nextInt();
+int ne = scanner.nextInt();
+ArrayList<Set<Integer>> G = new ArrayList<Set<Integer>>();
+for (int a = 0; a < nv; a++) {
+	G.add(new HashSet<Integer>());
+}
+for (int i = 0; i < ne; i++) {
+	int a = scanner.nextInt();
+	int b = scanner.nextInt();
+	if (a == b) {
+		continue;
+	}
+	G.get(a).add(b);
+	G.get(b).add(a);
+}
 ]]></content>
-    <tabTrigger>scgr</tabTrigger>
+    <tabTrigger>scanGraph</tabTrigger>
     <scope>source.java</scope>
-    <description>scan graph call</description>
+    <description>scan graph</description>
 </snippet>

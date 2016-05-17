@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+int ny = scanner.nextInt();
+int nx = scanner.nextInt();
+int[][] M = new int[ny][nx];
+for (int y = 0; y < ny; y++) {
+	for (int x = 0; x < nx; x++) {
+		M[y][x] = scanner.nextInt();
+	}
+}
+]]></content>
+    <tabTrigger>scanMatrix</tabTrigger>
+    <scope>source.java</scope>
+    <description>scan matrix</description>
+</snippet>

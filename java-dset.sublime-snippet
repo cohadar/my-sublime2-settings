@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-Set<${1:Integer}> ${2:S} = new ${3:HashSet}<>();
+${1:}Set<${2:Integer}> ${3:S} = new ${4:Hash}Set<>();
 ]]></content>
     <tabTrigger>dset</tabTrigger>
     <scope>source.java</scope>
