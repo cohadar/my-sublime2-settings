@@ -1,14 +1,22 @@
 {
-	"cmd": ["/Users/cohadar/workspaces/gcj-workspaces/dcj_mac_os/dcj.sh", "build", "--source=${file}", "--executable=a.out"],
-	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-	"working_dir": "${file_path}",
-	"selector": "source.c, source.c++, source.java, source.python",
+	"cmd": ["javac", "-target" , "1.7", "-source", "1.7", "-bootclasspath", "/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar", "-cp", ".:lib/*:../lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
 
 	"variants":
-	[
+	[			
 		{
-			"name": "Run",
-			"cmd": ["/Users/cohadar/workspaces/gcj-workspaces/dcj_mac_os/dcj.sh", "run", "--executable=./a.out", "--nodes=8", "--output=all"]
-		}
+			"name": "RunExamp",
+			"cmd": ["bash", "-c", "./run.sh examp"]
+		},
+		{
+			"name": "RunSmall",
+			"cmd": ["bash", "-c", "./run.sh small"]
+		},		
+		{
+			"name": "RunLarge",
+			"cmd": ["bash", "-c", "./run.sh large"]
+		}				
 	]
+
 }
