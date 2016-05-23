@@ -4,7 +4,7 @@
 	"selector": "source.java",
 
 	"variants":
-	[			
+	[
 		{
 			"name": "RunExamp",
 			"cmd": ["bash", "-c", "./run.sh examp 10"]
@@ -12,11 +12,15 @@
 		{
 			"name": "RunSmall",
 			"cmd": ["bash", "-c", "./run.sh small 30"]
-		},		
+		},
 		{
 			"name": "RunLarge",
 			"cmd": ["bash", "-c", "./run.sh large 100"]
-		}				
+		},
+		{
+			"name": "RunJunit",
+			"cmd": ["bash", "-c", "./run.sh mtest 100"]
+		}
 	]
 
 }
