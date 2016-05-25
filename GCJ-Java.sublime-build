@@ -22,16 +22,40 @@
 			"cmd": ["bash", "-c", "javap -private -c -l -verbose ${file_base_name}.class | tee tee ${file_base_name}.asmj"]
 		},					
 		{
-			"name": "RunExamp",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.examp.in && cat ${file_base_name}.examp.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.examp.out"]
+			"name": "Run1",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.1in && touch ${file_base_name}.1out && cat ${file_base_name}.1in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.1out -"]
 		},
 		{
-			"name": "RunSmall",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.small.in && cat ${file_base_name}.small.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.small.out"]
-		},		
+			"name": "Run2",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.2in && touch ${file_base_name}.2out && cat ${file_base_name}.2in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.2out -"]
+		},
 		{
-			"name": "RunLarge",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.large.in && cat ${file_base_name}.large.in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | tee ${file_base_name}.large.out"]
-		}				
+			"name": "Run3",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.3in && touch ${file_base_name}.3out && cat ${file_base_name}.3in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.3out -"]
+		},
+		{
+			"name": "Run4",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.4in && touch ${file_base_name}.4out && cat ${file_base_name}.4in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.4out -"]
+		},
+		{
+			"name": "Run5",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.5in && touch ${file_base_name}.5out && cat ${file_base_name}.5in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.5out -"]
+		},
+		{
+			"name": "Run6",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.6in && touch ${file_base_name}.6out && cat ${file_base_name}.6in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.6out -"]
+		},
+		{
+			"name": "Run7",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.7in && touch ${file_base_name}.7out && cat ${file_base_name}.7in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.7out -"]
+		},
+		{
+			"name": "Run8",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.8in && touch ${file_base_name}.8out && cat ${file_base_name}.8in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.8out -"]
+		},
+		{
+			"name": "Run9",
+			"cmd": ["bash", "-c", "touch ${file_base_name}.9in && touch ${file_base_name}.9out && cat ${file_base_name}.9in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.9out -"]
+		}
 	]
 }
