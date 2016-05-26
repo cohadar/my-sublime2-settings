@@ -23,39 +23,39 @@
 		},					
 		{
 			"name": "Run1",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.1in && touch ${file_base_name}.1out && cat ${file_base_name}.1in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.1out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 1"]
 		},
 		{
 			"name": "Run2",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.2in && touch ${file_base_name}.2out && cat ${file_base_name}.2in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.2out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 2"]
 		},
 		{
 			"name": "Run3",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.3in && touch ${file_base_name}.3out && cat ${file_base_name}.3in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.3out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 3"]
 		},
 		{
 			"name": "Run4",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.4in && touch ${file_base_name}.4out && cat ${file_base_name}.4in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.4out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 4"]
 		},
 		{
 			"name": "Run5",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.5in && touch ${file_base_name}.5out && cat ${file_base_name}.5in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.5out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 5"]
 		},
 		{
 			"name": "Run6",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.6in && touch ${file_base_name}.6out && cat ${file_base_name}.6in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.6out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 6"]
 		},
 		{
 			"name": "Run7",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.7in && touch ${file_base_name}.7out && cat ${file_base_name}.7in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.7out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 7"]
 		},
 		{
 			"name": "Run8",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.8in && touch ${file_base_name}.8out && cat ${file_base_name}.8in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.8out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 8"]
 		},
 		{
 			"name": "Run9",
-			"cmd": ["bash", "-c", "touch ${file_base_name}.9in && touch ${file_base_name}.9out && cat ${file_base_name}.9in | java -Xss512m -ea -cp '.:lib/*:../lib/*' ${file_base_name} COHADAR | diff ${file_base_name}.9out -"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java8_run_and_diff.sh ${file_base_name} 9"]
 		}
 	]
 }
