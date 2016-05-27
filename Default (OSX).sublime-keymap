@@ -8,7 +8,7 @@
 	{ "keys": ["super+7"], "command": "build", "args": {"variant": "Run7"} },
 	{ "keys": ["super+8"], "command": "build", "args": {"variant": "Run8"} },
 	{ "keys": ["super+9"], "command": "build", "args": {"variant": "Run9"} },
-	{ "keys": ["super+0"], "command": "build", "args": {"variant": "RunJunit"} },	
+	{ "keys": ["super+0"], "command": "build", "args": {"variant": "Run0"} },	
 	{ "keys": ["super+-"], "command": "build", "args": {"variant": "RunDecompiler"} },
 	{ "keys": ["super+="], "command": "build", "args": {"variant": "RunDecompilerVerbose"} }
 ]

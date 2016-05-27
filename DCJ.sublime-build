@@ -23,19 +23,27 @@
 		},
 		{
 			"name": "Run5",
-			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 1 100"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 5 10"]
 		},
 		{
 			"name": "Run6",
-			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 2 100"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 1 100"]
 		},
 		{
 			"name": "Run7",
-			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 3 100"]
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 2 100"]
 		},
 		{
 			"name": "Run8",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 3 100"]
+		},
+		{
+			"name": "Run9",
 			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 4 100"]
+		},
+		{
+			"name": "Run0",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 5 100"]
 		}
 	]
 
