@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+public static final int ${1:CONST} = ${2:0};
+]]></content>
+    <tabTrigger>constantInt</tabTrigger>
+    <scope>source.java</scope>
+    <description>integer constant</description>
+</snippet>
