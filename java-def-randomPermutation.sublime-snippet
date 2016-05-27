@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+public static int[] randomPermutation(int n) {
+	int[] P = new int[n];
+	for (int i = 0; i < P.length; i++) {
+		P[i] = i;
+	}
+	for (int i = 0; i < P.length-1; i++) {
+		int j = i + random.nextInt(P.length - i);
+		int temp = P[i];
+		P[i] = P[j];
+		P[j] = temp;
+	}
+	return P;
+}
+]]></content>
+    <tabTrigger>defRandomPermutation</tabTrigger>
+    <scope>source.java</scope>
+    <description>random permutation</description>
+</snippet>

@@ -1,16 +1,8 @@
 <snippet>
     <content><![CDATA[
 public static Random random = new Random();
-
-public static int[] randomArray(int n, int min, int max) {
-	int[] A = new int[n];
-	for (int i = 0; i < n; i++) {
-		A[i] = min + random.nextInt(max - min + 1);
-	}
-	return A;
-}
 ]]></content>
-    <tabTrigger>defrandom</tabTrigger>
+    <tabTrigger>defRandom</tabTrigger>
     <scope>source.java</scope>
-    <description>random array function</description>
+    <description>random object</description>
 </snippet>
