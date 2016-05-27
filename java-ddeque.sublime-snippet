@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-ArrayDeque<${1:Integer}> Q = new ArrayDeque<>();
+Deque<${1:Integer}> ${2:Q} = new ArrayDeque<>();
 ]]></content>
     <tabTrigger>ddeque</tabTrigger>
     <scope>source.java</scope>
