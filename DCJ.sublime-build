@@ -6,20 +6,36 @@
 	"variants":
 	[
 		{
-			"name": "RunExamp",
-			"cmd": ["bash", "-c", "./run.sh examp 10"]
+			"name": "Run1",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 1 10"]
 		},
 		{
-			"name": "RunSmall",
-			"cmd": ["bash", "-c", "./run.sh small 30"]
+			"name": "Run2",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 2 10"]
 		},
 		{
-			"name": "RunLarge",
-			"cmd": ["bash", "-c", "./run.sh large 100"]
+			"name": "Run3",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 3 10"]
 		},
 		{
-			"name": "RunJunit",
-			"cmd": ["bash", "-c", "./run.sh mtest 100"]
+			"name": "Run4",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 4 10"]
+		},
+		{
+			"name": "Run5",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 1 100"]
+		},
+		{
+			"name": "Run6",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 2 100"]
+		},
+		{
+			"name": "Run7",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 3 100"]
+		},
+		{
+			"name": "Run8",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh 4 100"]
 		}
 	]
 
