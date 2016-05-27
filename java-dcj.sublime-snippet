@@ -1,0 +1,51 @@
+<snippet>
+    <content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+/**
+  * @author Mighty Cohadar 
+  */
+public class Main {
+
+	final int id;
+	final int nn;
+	final long nd;
+	final long ll;
+	final long rr;
+
+	public Main(int id, int nn, long nd) {
+		this.id = id;
+		this.nn = nn;
+		this.nd = nd;
+		this.ll = id * nd / nn;
+		this.rr = (id + 1) * nd / nn - 1;
+	}
+
+	public void solve() {
+		$0
+	}
+
+	public static void main(String[] args) {
+		int id = message.MyNodeId();
+		int nn = message.NumberOfNodes();
+		long nd = ${1:library}.${2:NumberOfData}();
+		Main main = new Main(id, nn, nd);
+		main.solve();
+	}
+
+	public static long getValue(long i) {
+		return ${1:library}.${3:GetData}(i);
+	}
+
+	static void debug(Object...os) {
+		System.err.printf("%.65536s\n", Arrays.deepToString(os));
+	}	
+
+}
+
+]]></content>
+    <tabTrigger>dcj</tabTrigger>
+    <scope>source.java</scope>
+    <description>dcj java template</description>
+</snippet>

@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[
-public static long left(long id, long nn, long nd) {
+public static long left(int id, int nn, long nd) {
 	return id * nd / nn;
 }
 
-public static long right(long id, long nn, long nd) {
+public static long right(int id, int nn, long nd) {
 	return (id + 1) * nd / nn - 1;
 }
 ]]></content>
