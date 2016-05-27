@@ -10,6 +10,10 @@
 			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
 		},	
 		{
+			"name": "Run1",
+			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
+		},			
+		{
 			"name": "RunJunit",
 			"cmd": ["bash", "-c", "java -Xss512m -ea -cp '.:lib/*:../lib/*' org.junit.runner.JUnitCore ${file_base_name}"]
 		},	
