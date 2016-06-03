@@ -1,5 +1,5 @@
 {
-	"cmd": ["bash", "--login", "-c", "pylint ${file}"],
+	"cmd": ["bash", "--login", "-c", "python $file COHADAR"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.python",
 
@@ -7,7 +7,7 @@
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "--login", "-c", "python $file COHADAR"]
+			"cmd": ["bash", "--login", "-c", "pylint ${file}"]
 		},
 		{
 			"name": "Run1",
