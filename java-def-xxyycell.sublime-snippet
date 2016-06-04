@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+public static int xx(int cell) {
+	return cell & 0xFFFF;
+}
+
+public static int yy(int cell) {
+	return cell >>> 16;
+}
+
+public static int cell(int x, int y) {
+	assert (y & 0xFFFF0000) == 0;
+	assert (x & 0xFFFF0000) == 0;
+	return (y << 16) | x;
+}
+]]></content>
+    <tabTrigger>defxxyycell</tabTrigger>
+    <scope>source.java</scope>
+    <description>2 integer packed shorts</description>
+</snippet>
