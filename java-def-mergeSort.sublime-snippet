@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[
+static void insertionSort(${1:int}[] A, int li, int re) {
+	for (int r = li + 1; r < re; r++) {
+		${1:int} val = A[r];
+		int l = r;
+		while (li < l && A[l-1] > val) {
+			A[l] = A[l-1];
+			l--;
+		}
+		A[l] = val;
+	}
+}
+
+static void merge(${1:int}[] A, ${1:int}[] B, int li, int mi, int re) {
+	int l = li;
+	int r = mi;
+	int j = li;
+	while (l < mi && r < re) {
+		if (A[l] <= A[r]) {
+			B[j++] = A[l++];
+		} else {
+			B[j++] = A[r++];
+		}
+	}
+	while (l < mi) {
+		B[j++] = A[l++];
+	}
+	for (int i = li; i < j; i++) {
+		A[i] = B[i];
+	}
+}
+
+static void mergeSort(${1:int}[] A, ${1:int}[] B, int li, int re) {
+	if (li >= re) {
+		return;
+	}
+	if (re - li <= 10) {
+		insertionSort(A, li, re);
+	} else {
+		int mi = (li + re) >>> 1;
+		mergeSort(A, B, li, mi);
+		mergeSort(A, B, mi, re);
+		merge(A, B, li, mi, re);
+	}
+}
+
+static void mergeSort(${1:int}[] A, int li, int re) {
+	mergeSort(A, new ${1:int}[A.length], li, re);
+}
+]]></content>
+    <tabTrigger>defMergeSort</tabTrigger>
+    <scope>source.java</scope>
+    <description>merge sort</description>
+</snippet>
