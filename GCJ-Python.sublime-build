@@ -1,5 +1,5 @@
 {
-	"cmd": ["bash", "--login", "-c", "python $file COHADAR"],
+	"cmd": ["bash", "--login", "-c", "python $file"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.python",
 
