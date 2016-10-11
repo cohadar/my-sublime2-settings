@@ -1,14 +1,44 @@
 {
 	"cmd": ["go fmt '${file}' && go build '${file}'"],
     "selector": "source.go",
-    "path": "/usr/local/go/bin",
-    "shell": true,
 
 	"variants":
 	[
 		{
-			"name": "Run",
-			"cmd": ["go run '${file}'"]
-		}
+			"name": "Run1",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 1"]
+		},
+		{
+			"name": "Run2",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 2"]
+		},
+		{
+			"name": "Run3",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 3"]
+		},
+		{
+			"name": "Run4",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 4"]
+		},
+		{
+			"name": "Run5",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 5"]
+		},
+		{
+			"name": "Run6",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 6"]
+		},
+		{
+			"name": "Run7",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 7"]
+		},
+		{
+			"name": "Run8",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 8"]
+		},
+		{
+			"name": "Run9",
+			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 9"]
+		}		
 	]
 }
