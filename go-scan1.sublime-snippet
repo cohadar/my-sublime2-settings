@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 var ${1:a} int
-fmt.Fscan(stdin, &${1:a})
+fmt.Scan(&${1:a})
 
 ]]></content>
     <tabTrigger>scan1</tabTrigger>
